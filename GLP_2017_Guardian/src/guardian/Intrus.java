@@ -1,11 +1,11 @@
 package guardian;
 
 public class Intrus {
-	private static Obstacles D = new Obstacles("d");
-	static Obstacles S1 = new Obstacles("s1");
-	private static Obstacles S2 = new Obstacles("s2");
-	private static Obstacles S3 = new Obstacles("s3");
-	private static Obstacles S4 = new Obstacles("s4");
+	private static Obstacles D = new Obstacles(9);
+	private static Obstacles S1 = new Obstacles(8);
+	private static Obstacles S2 = new Obstacles(7);
+	private static Obstacles S3 = new Obstacles(6);
+	private static Obstacles S4;
   
 	public Obstacles getD() {
 		return D;

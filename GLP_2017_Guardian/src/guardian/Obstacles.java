@@ -1,33 +1,20 @@
 package guardian;
 
 public class Obstacles{
-	private static Obstacles  a = new Obstacles("a") ;
-	private static Obstacles  m = new Obstacles("m") ;
-	private static Obstacles  e = new Obstacles("e") ;
-	private static Obstacles  Herb = new Obstacles("*") ;
+
+	private static Obstacles  a = new Obstacles(2);
+	private static Obstacles  m = new Obstacles(3);
+	private static Obstacles  e = new Obstacles(1) ;
+	private static Obstacles  Herb = new Obstacles(0) ;
 	private static String type;
 	
 	
 	
-	public Obstacles(String string) {
+	public Obstacles(int string) {
 		// TODO Auto-generated constructor stub
 		this.type = type;
 	}
 	
-/*	public String getType(Obstacles x) {
-		if(x==a)
-			type="a";
-		if(x==m)
-			type="m";
-		if(x==e)
-			type="e";
-		if(x==Gardien.getg())
-			type="g";
-		if(x==Intrus.getS())
-			type="s";
-		return type;
-	}*/
-
 	public void setType(String type) {
 		this.type = type;
 	} 
@@ -57,5 +44,5 @@ public class Obstacles{
 		this.e = e;
 	}
 
-	
+		
 }

@@ -38,11 +38,11 @@ public class ArrowTest extends JPanel {
          }
          private void myKeyEvt(KeyEvent e, String text) {
             int key = e.getKeyCode();
-          //  System.out.println("TEST");
+            System.out.println("TEST");
 
             if (key == KeyEvent.VK_KP_LEFT || key == KeyEvent.VK_LEFT)
             {
-              //  System.out.println(text + " LEFT");
+                System.out.println(text + " LEFT");
                 Deplacement.deplacerG();
 		    	mouve++; 
              /*   matrice[x][y] = saveterrain;
@@ -59,14 +59,14 @@ public class ArrowTest extends JPanel {
             }
             else if (key == KeyEvent.VK_KP_UP || key == KeyEvent.VK_UP)
             {
-               // System.out.println(text + " UP");
+                System.out.println(text + " UP");
             	Deplacement.deplacerH();
 		    	mouve++; 
                 //Call some function
             }
             else if (key == KeyEvent.VK_KP_DOWN || key == KeyEvent.VK_DOWN)
             {
-               // System.out.println(text + " DOWN");
+                System.out.println(text + " DOWN");
             	Deplacement.deplacerB();
 		    	mouve++; 
                 //Call some function
@@ -82,7 +82,7 @@ public class ArrowTest extends JPanel {
       return new Dimension(PREF_W, PREF_H);
    }
 
-   private static void createAndShowGui() {
+   static void createAndShowGui() {
       ArrowTest mainPanel = new ArrowTest();
 
       JFrame frame = new JFrame("ArrowTest");
@@ -104,6 +104,7 @@ public class ArrowTest extends JPanel {
       SwingUtilities.invokeLater(new Runnable() {
          public void run() {
             createAndShowGui();
+            
          }
       });
    }

@@ -1,7 +1,7 @@
 package guardian;
 
 public class Gardien {
-	private static Obstacles guardien = new Obstacles("g");
+	private static Obstacles guardien = new Obstacles(4);
 	
 	public static Obstacles getg() {
 		return guardien;

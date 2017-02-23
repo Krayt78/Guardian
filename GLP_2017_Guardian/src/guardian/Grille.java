@@ -2,13 +2,18 @@ package guardian;
 
 import java.util.Random;
 
+import pathexample.UnitMover;
+import pathfinding.Mover;
+import pathfinding.TileBasedMap;
+
 public class Grille {
-	private int demension;
+	static int demension;
 	static Case[][] grille;
 	private String gardian =" g ";
 	//static Obstacles[] o = {new Obstacles(Obstacles.getA()),new Obstacles("a"),new Obstacles("e"),new Obstacles("m"),new Obstacles("g"),new Obstacles("i")};
 	private Case c;
 	static int save = 0;
+	static int saveint = 0;
 	static int counter = 4;
 	
 	
@@ -59,7 +64,7 @@ public class Grille {
 				grille[x][y]=new Case(Obstacles.getA());
 		}
 		for(int i =0 ;i<k;i++){
-			x=r.nextInt(n);
+			x=r.nextInt(n); 
 			y=r.nextInt(n);
 			//o[i]=new Obstacles("m");
 			if(grille[x][y].getO()!=Gardien.getg() && grille[x][y].getO()!=Intrus.getS(x,y))
@@ -126,13 +131,6 @@ public class Grille {
 		
 	}
 
-/*	public Case getCase(int ligne ,int colone){
-		ligne --;
-		colone --;
-		return this.grille[ligne][colone];
-	} */
-	
-	
 	public String toString(){
 		String s="";
 		for(int i =0 ;i<grille.length ; i++){
@@ -145,5 +143,4 @@ public class Grille {
 		
 		return s;
 	}
-
 }
