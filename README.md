@@ -26,4 +26,13 @@ Petits changements finalement... apres avoir fais des recherches du coté de dij
 
 Faire en sorte que l'image s'actualise chaque fois que l'on se deplace (implementer la notion de deplacement graphique).
 
+**18/02/2017 ... Version 1.6
+
+*Changements :
+
+Actualisation faite , champ de vision finit , bug réparés ( sur l'IA de l intrus ).
+
+*Prochaine etape :
+
+Pathfinding et IA guardien
 
